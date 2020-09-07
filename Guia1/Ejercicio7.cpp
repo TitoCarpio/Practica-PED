@@ -23,8 +23,6 @@ void pos_carcater(char *p , int longitud , int *posicion){
 
 }
 
-
-
 int main(){
     char cadena[30];
     int longitud = 0, posicion = 0;
