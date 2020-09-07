@@ -9,8 +9,9 @@ int main(){
     char *p = cadena;
 
     
-    cout<<"\t"<<*p<<" "<<*p<<" "<<*(p+2)<<" "<<*(p+3)<<endl;
-    cout<<"\t"<<p<<" "<<*(p+4)<<" "<<*(p+5)<<" "<<*(p+6)<<endl;
+    cout<<"\t"<<cadena[0]<<" "<<*p<<" "<<cadena[2];
+    cout<<" "<<*(p+3)<<endl;
+    cout<<"\t"<<*p<<" "<<*(p+4)<<" "<<*(p+5)<<" "<<*(p+6)<<endl;
 
 
     getch();
