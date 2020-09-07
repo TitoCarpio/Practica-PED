@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// Funcion que cuenta y devuleve la cantidad de vocales de la cadena
 int contarvocales(char *p, int longitud){
     int n = longitud;
     int contador =0;
@@ -33,6 +34,8 @@ int main(){
 
     cout<<"\t Ingrese la cadena de caracteres: ";
     cin.getline(cadena,30,'\n');
+    
+    // obtengo la longitud de mi cadena para poder usar un for en la funcion contarvocales
     longitud = strlen(cadena);
 
     vocales = contarvocales(cadena,longitud);
