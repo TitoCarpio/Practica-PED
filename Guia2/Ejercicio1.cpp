@@ -53,7 +53,7 @@ void Ingresar_datos(){
 }
 
 // Funcion con la que pedimos las notas al usurio
-void notas(int n){
+void notas(){
     for(int i=0;i<n;i++){
     cout<<"\t Ingrese la nota "<<i+1<<":";
     cin>>estudiante.notas[i];
@@ -67,10 +67,10 @@ float promedio(){
         prom = (prom + estudiante.notas[i]);
     }
     prom = prom/n;
-    if(prom < 6){
-        estudiante.estado = "Resprobado";
+    if(prom >= 6){
+        estudiante.estado = "Aprobado";
     }else{
-        estudiante.estado  = "Aprobado";
+        estudiante.estado  = "Reprobado";
     }
     return prom;
 }
